@@ -45,3 +45,47 @@ nav ul li a{
 nav ul li a:hover, nav ul li a.active{
     background-color: #4E6066;
 }
+.menu-btn{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
+
+@media only screen and ( max-width: 940px ){
+    .menu-btn{
+        display: block;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content: "\f00d";
+    }
+    nav ul{
+        position: fixed;
+        background-color: #141C23;
+        top: 80px;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.5s ease;
+    }
+    nav ul li{
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 22px;
+    }
+    nav ul li a:hover, nav ul li a.active{
+        background: none;
+        color: red;
+    }
+}
