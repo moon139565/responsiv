@@ -89,3 +89,12 @@ nav ul li a:hover, nav ul li a.active{
         color: red;
     }
 }
+
+/* header code start */
+header{
+    background-image: url('./pic/banner.jpg');
+    height: 92vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
